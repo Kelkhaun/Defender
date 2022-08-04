@@ -17,9 +17,9 @@ public class Princess : MonoBehaviour
         _path = GetComponent<DOTweenPath>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collider)
     {
-        if (other.gameObject.TryGetComponent(out Bullet bullet))
+        if (collider.gameObject.TryGetComponent(out Bullet bullet))
             Die();
     }
 
