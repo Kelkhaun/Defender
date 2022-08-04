@@ -19,10 +19,10 @@ public class PlayerMover : MonoBehaviour
 
     private void FixedUpdate()
     {
-        TryMove();
+        Move();
     }
 
-    private void TryMove()
+    private void Move()
     {
         _animator.SetInteger(PlayerAnimator.States.MotionState, _motionState);
 
